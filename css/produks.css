@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3,1fr);
+    margin: 80px;
+    grid-gap: 30px;
+}
+
+.grid > a {
+    border: 2px solid black;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
