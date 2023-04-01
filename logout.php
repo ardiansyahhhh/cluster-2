@@ -5,7 +5,7 @@
     session_destroy();
     $_SESSION = [''];
 
-    header("location:pagelogin.php");
+    header("location:index.php");
 
 
 ?>

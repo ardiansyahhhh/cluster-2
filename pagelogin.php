@@ -17,7 +17,7 @@
                 $_SESSION["login"] = $data['username'];
                 echo "<script>
                 alert('Login Berhasil');
-                document.location.href='pagecustomer/produk.php';
+                document.location.href='index.php';
                 </script>";
             }else{
                 $_SESSION["login"] = $data['username'];

@@ -1,6 +1,12 @@
 <?php
 
     session_start();
+    if(!isset($_SESSION["login"])){
+        echo "<script>
+        alert('Silakan Login Terlebih Dahulu!');
+        document.location.href='../pagelogin.php';
+        </script>";
+    }
     require '../connect.php';
 
     $login = $_SESSION["login"];
@@ -35,7 +41,7 @@
         <div class="child">
             <table border="2">
                 <tr>
-                    <th colspan="6"><a href="produk.php">KEMBALI</a></th>
+                    <th colspan="6"><a href="../index.php">KEMBALI</a></th>
                 </tr>
                 <tr>
                     <th colspan="6">BARANG YANG DIPESAN</th>

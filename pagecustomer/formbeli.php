@@ -1,6 +1,13 @@
 <?php
 
     session_start();
+    if(!isset($_SESSION["login"])){
+        echo "<script>
+        alert('Silakan Login Terlebih Dahulu!');
+        document.location.href='../pagelogin.php';
+        </script>";
+    }
+    
     require '../connect.php';
 
     $login = $_SESSION["login"];
@@ -24,7 +31,7 @@
         if($query){
             echo "<script>
             alert('TRANSAKSI BERHASIL!');
-            document.location.href='produk.php';
+            document.location.href='../index.php';
             </script>";
         }
     }
